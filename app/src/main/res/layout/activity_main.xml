@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#1487E3"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bluefaygo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/radius_oval"
+            />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_box"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/radius_box"
+        >
+
+        <TextView
+            android:id="@+id/title_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txttidar_filbert_alpha_giovanno"
+            android:layout_toEndOf="@+id/iv_bluefaygo"
+            android:layout_toRightOf="@+id/iv_bluefaygo"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_below="@+id/title_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvanno"
+            android:layout_toEndOf="@+id/iv_bluefaygo"
+            android:layout_toRightOf="@+id/iv_bluefaygo"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvisa_152_450_80_usd"
+            android:layout_toEndOf="@+id/iv_bluefaygo"
+            android:layout_toRightOf="@+id/iv_bluefaygo"
+            android:textColor="#EA0A0A"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_bluefaygo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/lilsummerv1"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        tools:listitem="@layout/item_dashboard"
+        />
+
+    
+
+</RelativeLayout>
